@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>%NAME% - Server status</title>
+    <style>
+      body {
+        font-family: Verdana, Arial, Sans-Serif;
+        font-size: 13px;
+      }
+
+      h2 {
+        color: #023167;
+      }
+
+      table {
+        font-size: inherit;
+        width: 100%;
+      }
+
+      table th, td {
+        padding: 3px;
+      }
+
+      table th {
+        background: #a7bcdc;
+        color: #023167;
+        text-align: left;
+      }
+
+      table td {
+        background: #efefef;
+      }
+
+      #footer {
+        text-align: center;
+      }
+
+      #footer img {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Server status</h2>
+    <table>
+      <tr>
+        <th colspan="2">Statistics</th>
+      </tr>
+      <tr>
+        <td width="100px">Accounts</td>
+        <td>%ACCOUNTS%</td>
+      </tr>
+      <tr>
+        <td width="100px">Chars</td>
+        <td>%CHARS%</td>
+      </tr>
+      <tr>
+        <td width="100px">Items</td>
+        <td>%ITEMS%</td>
+      </tr>
+      <tr>
+        <td width="100px">Guilds</td>
+        <td>%GUILDS%</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th>Clients (%CLIENTS%)</th>
+      </tr>
+      <script language="Sphere">
+        CLIENTLIST <tr><td>%NAME%</td></tr>
+      </script>
+    </table>
+    <p>This page was last updated on %RTIME%</p>
+    <p id="footer">
+      Made possible by <a href="http://www.spherecommunity.net" target="_blank"><img src="web/sphere.png"></a>
+    </p>
+    </p>
+  </body>
+</html>
